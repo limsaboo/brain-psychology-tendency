@@ -908,7 +908,12 @@ const ADMIN_PASSWORD = 'brain2025!';
 /* ---------- Supabase 쿠폰 시스템 ---------- */
 const SB_URL = "https://grxqfaeznqqohnlltged.supabase.co";
 const SB_KEY = "sb_publishable_Sgv6BVPo1dOnVICcX1tfzA_gf7T5Z4I";
-const sb = window.supabase.createClient(SB_URL, SB_KEY);
+let sb = null;
+try{
+  sb = window.supabase.createClient(SB_URL, SB_KEY);
+}catch(e){
+  console.error('Supabase 초기화 실패 (CDN 로드 문제일 수 있음):', e);
+}
 let verifiedCouponCode = null;
 let couponConsumed = false;
 
