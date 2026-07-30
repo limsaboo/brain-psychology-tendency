@@ -33,7 +33,7 @@
   .info-box h4{font-size:15px; font-weight:800; margin-bottom:8px; display:flex; align-items:center; gap:6px;}
   .info-box ul{margin:0; padding-left:18px;}
   .info-box li{font-size:13.5px; color:var(--text); font-weight:600; line-height:1.85; word-break:keep-all; margin-bottom:4px;}
-  .timer-badge{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:2.5px solid var(--gold); color:var(--gold2); font-size:17px; font-weight:800; margin-bottom:14px;}
+  .timer-badge{display:inline-flex; align-items:center; justify-content:center; width:60px; height:60px; border-radius:50%; border:3px solid var(--gold); color:var(--gold2); font-size:24px; font-weight:900; margin-bottom:16px;}
   .timer-badge.warn{border-color:#c0392b; color:#c0392b;}
   .coupon-row{display:flex; gap:8px; width:min(360px,88vw); margin-bottom:14px;}
   .coupon-row input{flex:1; padding:12px 14px; border-radius:10px; border:1px solid #d8cfb8; background:#ffffff; color:var(--text); font-size:14px;}
@@ -59,25 +59,25 @@
     width:100%; padding:8px 12px; border-radius:9px; border:1px solid #d8cfb8;
     background:#ffffff; color:var(--text); font-size:13.5px;
   }
-  .progress-wrap{width:min(420px,90vw); margin-bottom:20px;}
-  .progress-bar-bg{width:100%; height:6px; background:#e8e1cd; border-radius:6px; overflow:hidden;}
+  .progress-wrap{width:min(520px,94vw); margin-bottom:24px;}
+  .progress-bar-bg{width:100%; height:10px; background:#e8e1cd; border-radius:8px; overflow:hidden;}
   .progress-bar-fill{height:100%; background:linear-gradient(90deg,var(--left),var(--gold)); width:0%; transition:width .3s;}
-  .progress-label{font-size:12px; color:var(--sub); font-weight:700; margin-top:6px; white-space:nowrap;}
-  #svg-holder{width:min(280px,72vw); height:min(280px,72vw); background:#0d0f24; border-radius:20px; margin-bottom:22px; display:flex; align-items:center; justify-content:center; border:1px solid #e4ddc9; box-shadow:0 4px 16px rgba(0,0,0,0.08);}
+  .progress-label{font-size:15px; color:var(--gold2); font-weight:800; margin-top:8px; white-space:nowrap;}
+  #svg-holder{width:min(340px,82vw); height:min(340px,82vw); background:#0d0f24; border-radius:24px; margin-bottom:26px; display:flex; align-items:center; justify-content:center; border:2px solid #e4ddc9; box-shadow:0 8px 22px rgba(0,0,0,0.1);}
   #svg-holder svg{width:88%; height:88%;}
-  .likert-row{display:flex; gap:8px; width:min(460px,92vw); justify-content:center; flex-wrap:nowrap;}
+  .likert-row{display:flex; gap:10px; width:min(600px,96vw); justify-content:center; flex-wrap:nowrap;}
   .likert-btn{
-    flex:1; min-width:0; padding:12px 4px; border-radius:10px; border:1.5px solid #d8cfb8;
-    background:#ffffff; color:var(--sub); font-weight:700; font-size:clamp(10px,2.6vw,12px);
+    flex:1; min-width:0; padding:18px 6px; border-radius:14px; border:2px solid #d8cfb8;
+    background:#ffffff; color:#3d3020; font-weight:800; font-size:clamp(12px,3.2vw,15px);
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer;
   }
   .likert-btn:active, .likert-btn.sel{background:var(--gold); color:#fffdf7; border-color:var(--gold);}
-  .spinner{width:48px; height:48px; border:4px solid #e4ddc9; border-top-color:var(--gold); border-radius:50%; animation:spin 0.9s linear infinite; margin-bottom:18px;}
+  .spinner{width:64px; height:64px; border:6px solid #e4ddc9; border-top-color:var(--gold); border-radius:50%; animation:spin 0.9s linear infinite; margin-bottom:22px;}
   @keyframes spin{to{transform:rotate(360deg);}}
-  .result-section{width:min(520px,94vw); margin-left:auto; margin-right:auto; background:var(--card); border-radius:16px; padding:18px; margin-bottom:18px; border:1px solid #e4ddc9; box-shadow:0 2px 10px rgba(0,0,0,0.04);}
-  .result-section h3{font-size:14px; color:var(--gold2); font-weight:800; margin-bottom:10px; white-space:nowrap;}
+  .result-section{width:min(640px,96vw); margin-left:auto; margin-right:auto; background:var(--card); border-radius:20px; padding:26px; margin-bottom:22px; border:2px solid #e4ddc9; box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+  .result-section h3{font-size:19px; color:var(--gold2); font-weight:900; margin-bottom:14px; white-space:nowrap;}
   canvas{max-width:100%;}
-  .legend-row{display:flex; justify-content:center; gap:16px; font-size:11px; color:var(--sub); font-weight:700; margin-top:8px; flex-wrap:nowrap; white-space:nowrap;}
+  .legend-row{display:flex; justify-content:center; gap:20px; font-size:14px; color:#3d3020; font-weight:800; margin-top:10px; flex-wrap:nowrap; white-space:nowrap;}
   .dot{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px;}
   .sns-footer{display:flex; gap:14px; justify-content:center; margin-top:16px; margin-bottom:20px;}
   .sns-footer a{color:var(--gold2); font-size:12px; font-weight:700; text-decoration:none; white-space:nowrap; border:1px solid #d8cfb8; padding:6px 12px; border-radius:20px;}
@@ -390,7 +390,7 @@
     </div>
     <div class="timer-badge" id="test-timer">8</div>
     <div id="svg-holder"></div>
-    <p class="desc" style="margin-bottom:16px; font-size:13px;">이 이미지에 왠지 마음이 끌리시나요?</p>
+    <p class="desc" style="margin-bottom:20px; font-size:clamp(16px,4.2vw,20px); font-weight:800;">이 이미지에 왠지 마음이 끌리시나요?</p>
     <div class="likert-row">
       <button class="likert-btn" data-v="1" onclick="answer(1)">전혀아니다</button>
       <button class="likert-btn" data-v="2" onclick="answer(2)">아니다</button>
@@ -422,20 +422,20 @@
     <div class="tab-panel active" id="tab-comprehensive">
       <div class="result-section">
         <h3>한눈에 보는 영역별 요약</h3>
-        <p class="desc" style="font-size:11.5px; margin-bottom:10px;">좌뇌·우뇌·전뇌·조절력 4개 영역의 평균 점수를 한눈에 비교합니다.</p>
+        <p class="desc" style="font-size:15px; font-weight:700; margin-bottom:12px;">좌뇌·우뇌·전뇌·조절력 4개 영역의 평균 점수를 한눈에 비교합니다.</p>
         <canvas id="chart-summary" height="140"></canvas>
       </div>
       <div class="result-section">
         <h3>응답 일관성 지수 (신뢰도)</h3>
         <div class="progress-bar-bg" style="height:10px;"><div class="progress-bar-fill" id="consistency-bar" style="width:0%;"></div></div>
         <p class="desc" style="margin:10px 0 4px; font-size:20px; color:var(--gold2);" id="consistency-value">-</p>
-        <p class="desc" id="consistency-note" style="font-size:12px;"></p>
+        <p class="desc" id="consistency-note" style="font-size:15px; font-weight:700;"></p>
       </div>
       <div class="result-section">
         <h3>좌우뇌 균형 / 조절력 총평</h3>
         <div id="summary-dominant-label" style="font-size:18px; font-weight:800; margin-bottom:10px; word-break:keep-all; text-align:left; line-height:1.5;"></div>
-        <p class="desc" id="balance-text" style="font-size:13px; margin-bottom:10px; text-align:left;"></p>
-        <p class="desc" id="control-text" style="font-size:13px; text-align:left;"></p>
+        <p class="desc" id="balance-text" style="font-size:15.5px; font-weight:700; margin-bottom:12px; text-align:left;"></p>
+        <p class="desc" id="control-text" style="font-size:15.5px; font-weight:700; text-align:left;"></p>
       </div>
       <div class="result-section">
         <h3>강점 Top 3</h3>
@@ -451,7 +451,7 @@
     <div class="tab-panel" id="tab-leftright">
       <div class="result-section">
         <h3>좌우뇌 12기능 — 군집 방사형 그래프</h3>
-        <p class="desc" style="font-size:11px; margin-bottom:8px;">좌뇌 6개 / 우뇌 6개를 각각 한쪽에 군집 배치하여 좌우 불균형을 대칭적으로 비교합니다.</p>
+        <p class="desc" style="font-size:15px; font-weight:700; margin-bottom:10px;">좌뇌 6개 / 우뇌 6개를 각각 한쪽에 군집 배치하여 좌우 불균형을 대칭적으로 비교합니다.</p>
         <div id="radar-dominant-label" style="text-align:center; font-size:clamp(15px,4vw,20px); font-weight:800; margin-bottom:14px; word-break:keep-all; line-height:1.5;"></div>
         <canvas id="chart-radar"></canvas>
         <div class="legend-row">
