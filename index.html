@@ -50,8 +50,8 @@
     margin-top:10px; box-shadow:0 6px 20px rgba(184,134,11,0.25);
   }
   .btn.ghost{background:transparent; color:var(--gold2); border:1px solid var(--gold); box-shadow:none;}
-  .bama-intro-logo{width:150px; height:150px; border-radius:50%; background:radial-gradient(circle at 35% 30%, #fff 0%, #fdf1d9 55%, #f6dfa8 100%); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; box-shadow:0 16px 40px rgba(184,134,11,0.28), 0 0 0 6px #fff, 0 0 0 8px rgba(184,134,11,0.25);}
-  .btn-hero{display:block; width:min(560px,94vw); margin:0 auto; padding:26px 20px; font-size:clamp(19px,5vw,24px); font-weight:900; color:#fffdf7; background:linear-gradient(135deg,var(--gold),#8a5c00); border:none; border-radius:22px; box-shadow:0 14px 30px rgba(184,134,11,0.35); cursor:pointer; letter-spacing:.3px;}
+  .bama-intro-logo{width:100px; height:100px; border-radius:50%; background:radial-gradient(circle at 35% 30%, #fff 0%, #fdf1d9 55%, #f6dfa8 100%); display:flex; align-items:center; justify-content:center; margin:0 auto 14px; box-shadow:0 10px 26px rgba(184,134,11,0.25), 0 0 0 5px #fff, 0 0 0 7px rgba(184,134,11,0.22);}
+  .btn-hero{display:block; width:min(560px,94vw); margin:0 auto; padding:18px 20px; font-size:clamp(17px,4.5vw,21px); font-weight:900; color:#fffdf7; background:linear-gradient(135deg,var(--gold),#8a5c00); border:none; border-radius:18px; box-shadow:0 10px 22px rgba(184,134,11,0.32); cursor:pointer; letter-spacing:.3px;}
   .btn-hero:active{transform:scale(.98);}
   .form-row{width:min(360px,88vw); text-align:left; margin-bottom:9px;}
   .form-row label{display:block; font-size:12px; color:var(--sub); font-weight:700; margin-bottom:3px; white-space:nowrap;}
@@ -295,38 +295,38 @@
 <div id="app">
 
   <!-- 인트로 -->
-  <div class="screen active" id="screen-intro" style="padding:32px 20px 40px; justify-content:flex-start;">
+  <div class="screen active" id="screen-intro" style="padding:24px 20px 32px; justify-content:flex-start;">
     <div class="bama-intro-logo">
-      <img id="intro-logo-img" alt="한국뇌심리연구소 로고" style="width:88px; height:88px; object-fit:contain; display:block;">
+      <img id="intro-logo-img" alt="한국뇌심리연구소 로고" style="width:60px; height:60px; object-fit:contain; display:block;">
     </div>
-    <div class="intro-orgname" style="font-size:13px; letter-spacing:2px; margin-bottom:16px;">한국뇌심리연구소 · KOREA BRAIN PSYCHOLOGY INSTITUTE</div>
+    <div class="intro-orgname" style="font-size:11px; letter-spacing:1.5px; margin-bottom:10px;">한국뇌심리연구소 · KOREA BRAIN PSYCHOLOGY INSTITUTE</div>
     <div style="position:relative; width:min(560px,94vw); margin:0 auto;">
-      <div class="badge" style="font-size:15px; padding:8px 22px; margin-bottom:14px;">뇌심리 무의식 투사검사</div>
-      <h1 style="font-size:clamp(28px,7.5vw,42px); margin-bottom:12px;">뇌능력다중검사시스템</h1>
+      <div class="badge" style="font-size:13px; padding:6px 18px; margin-bottom:10px;">뇌심리 무의식 투사검사</div>
+      <h1 style="font-size:clamp(24px,6.5vw,36px); margin-bottom:8px;">뇌능력다중검사시스템</h1>
     </div>
-    <p class="desc" style="font-size:clamp(15px,4vw,18px); line-height:1.7; margin-bottom:26px;">좌뇌 6 · 우뇌 6 · 전뇌 4 · 5대 조절력, 21개 세부지표를 분석하는 무의식 이미지 투사 검사입니다.</p>
-
-    <div style="display:flex; gap:14px; width:min(640px,96vw); flex-wrap:wrap; justify-content:center; margin-bottom:22px;">
-      <div class="info-box" style="flex:1; min-width:260px; padding:20px 22px; margin-bottom:0; display:flex; flex-direction:column;">
-        <h4 style="color:#3ecfc0; font-size:16px; margin-bottom:10px;">📋 검사 안내</h4>
-        <ul style="padding-left:18px; flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:6px;">
-          <li style="font-size:14px; line-height:1.7;">63개 이미지에 순서대로 응답, 소요 약 4~6분</li>
-          <li style="font-size:14px; line-height:1.7;">"왠지 끌리는 정도"를 5단계로 직관적으로 선택</li>
-          <li style="font-size:14px; line-height:1.7;">정답 없음 — 오래 고민 말고 처음 느낌대로 응답</li>
-          <li style="font-size:14px; line-height:1.7;">완료 후 21개 세부지표 종합 리포트 즉시 제공</li>
-        </ul>
-      </div>
-      <div class="info-box" style="flex:1; min-width:260px; padding:20px 22px; margin-bottom:0; display:flex; flex-direction:column;">
-        <h4 style="color:#ff6b5b; font-size:16px; margin-bottom:10px;">⚠️ 유의사항</h4>
-        <ul style="padding-left:18px; flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:6px;">
-          <li style="font-size:14px; line-height:1.7;">조용하고 방해받지 않는 환경에서 진행</li>
-          <li style="font-size:14px; line-height:1.7;">창을 닫거나 새로고침하면 처음부터 재시작</li>
-          <li style="font-size:14px; line-height:1.7;">문항마다 응답 제한시간 있음, 즉시 응답 필요</li>
-        </ul>
-      </div>
-    </div>
+    <p class="desc" style="font-size:clamp(14px,3.6vw,16px); line-height:1.6; margin-bottom:18px;">좌뇌 6 · 우뇌 6 · 전뇌 4 · 5대 조절력, 21개 세부지표를 분석하는<br>무의식 이미지 투사 검사입니다.</p>
 
     <button class="btn-hero" onclick="goTo('intake')">검사 시작하기 →</button>
+
+    <div style="display:flex; gap:12px; width:min(640px,96vw); flex-wrap:wrap; justify-content:center; margin-top:22px;">
+      <div class="info-box" style="flex:1; min-width:240px; padding:16px 18px; margin-bottom:0; display:flex; flex-direction:column;">
+        <h4 style="color:#3ecfc0; font-size:14px; margin-bottom:8px;">📋 검사 안내</h4>
+        <ul style="padding-left:16px; flex:1; display:flex; flex-direction:column; gap:5px;">
+          <li style="font-size:12.5px; line-height:1.6;">63개 이미지에 순서대로 응답, 소요 약 4~6분</li>
+          <li style="font-size:12.5px; line-height:1.6;">"왠지 끌리는 정도"를 5단계로 직관적으로 선택</li>
+          <li style="font-size:12.5px; line-height:1.6;">정답 없음 — 처음 느낌대로 응답</li>
+          <li style="font-size:12.5px; line-height:1.6;">완료 후 21개 세부지표 리포트 즉시 제공</li>
+        </ul>
+      </div>
+      <div class="info-box" style="flex:1; min-width:240px; padding:16px 18px; margin-bottom:0; display:flex; flex-direction:column;">
+        <h4 style="color:#ff6b5b; font-size:14px; margin-bottom:8px;">⚠️ 유의사항</h4>
+        <ul style="padding-left:16px; flex:1; display:flex; flex-direction:column; gap:5px;">
+          <li style="font-size:12.5px; line-height:1.6;">조용하고 방해받지 않는 환경에서 진행</li>
+          <li style="font-size:12.5px; line-height:1.6;">창을 닫거나 새로고침하면 처음부터 재시작</li>
+          <li style="font-size:12.5px; line-height:1.6;">문항마다 응답 제한시간 있음</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <!-- 인적사항 입력 -->
